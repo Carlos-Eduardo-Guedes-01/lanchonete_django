@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% block content %}
+<form name="formPainel" id="formPainel" method="post" action="{% url 'accounts:/changepassword/' %}">
+    <div class="main-login">
+       
+       {% csrf_token %}
+       <div class="right-login">
+          <div class="card-login">
+            <fieldset class="perfil" style="width: 20%;">
+                <center><h1><i class="fa-solid fa-user"></i></h1></center>
+                <center><h2>{{request.user}}</h2></center>
+            </fieldset>
+             <h1>Alterar Senha</h1>
+             <div class="textfield">
+               <div style="color:red;">{{form_senha.old_password.errors}}</div>
+                <label for="senha_atual">Senha Atual</label>
+                {{form_senha.old_password}}
+                <!--<input name="senha_atual" id="senha_atual" type="password" placeholder="Senha">-->
+             </div>
+             <input type="text" name="usu" id="usu" value="{{request.user}}" style="display: none;" readonly>
+             <div class="textfield">
+               <div style="color:red;">{{form_senha.new_password1.errors}}</div>
+                <label for="nova_senha">Nova Senha</label>
+                {{form_senha.new_password1}}
+                <!--<input name="nova_senha" id="nova_senha" type="password" placeholder="Senha">-->
+                <ul>
+               <b><li>Precisa conter pelo menos 8 caracteres.</li>
+               <li>Não pode ser muito comum.</li>
+               <li>Deve conter letras e números.</li></b>
+               </ul>
+             </div>
+             <div class="textfield">
+               <div style="color:red;">{{form_senha.new_password2.errors}}</div>
+               
+                <label for="nova_senha">Confirmação de senha</label>
+                {{form_senha.new_password2}}
+                <!--<input name="nova_senha" id="nova_senha" type="password" placeholder="Senha">-->
+             </div>
+             <button type="submit" class="btn-login">Alterar</button>
+
+             <p class="cadastrar">Ao invés disso, <a href="{% url 'accounts:/logouts/'%}"style="color:white;"><b>volte ao início.</b></a></p>
+
+             {% if msg %}
+          <div class="alert {{class}}" style="width: 30%;">
+             {{msg}}
+          </div>
+       {% endif %}
+          </div>
+       </div>
+    </div>
+ </form>
+{% endblock %}

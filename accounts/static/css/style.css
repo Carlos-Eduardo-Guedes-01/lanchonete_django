@@ -1,0 +1,232 @@
+@charset 'utf-8';
+hr{
+    color: #F5DEB3;
+}
+.user{
+    border:2px solid white;
+    padding: 2px;
+    border-radius: 10px;
+    border-color: #8B4513;
+    cursor: pointer;
+    text-decoration: none;
+}
+.perfil{
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 110%;
+    background-color:#BDA06A;
+}
+h3,h2{
+    color:white;
+}
+.sobre{
+    margin-top: 6%;
+}
+.left-login{
+    margin-left: 2%;
+    padding-right: 20%;
+    width: 100%;
+    margin-right: 30%;
+}
+.textfield{
+    margin-bottom: 1%;
+}
+.right-login .card-login{
+    margin-left: 2%;
+}
+.field{
+    border-radius: 20px;
+    width: 100%;
+    background-color: #333232;
+    padding-right: 20%;
+}
+.btn-login2 .link-info{
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border: none;
+    border-radius: 10px;
+}
+.btn-login{
+    width: 30%;
+    padding: 5px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    color: #2b134b;
+    background: #0f8;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-login:hover {
+    transform: scale(1.03);
+    transition: all 0.5s;
+}
+.cadastrar .link-info{
+    color:white;
+
+}
+.login{
+    margin-left: 3%;
+    padding-left: 1%;
+    width: 40%;
+}
+
+h1{
+    color: white;
+}
+@font-face{
+    font-family: 'organic';
+    src: url('../fontes/Organic Relief.ttf') format('truetype');
+}
+.card-login{
+    font-size: 13pt;
+    font-family: 'organic';
+    src: url('../fontes/Organic Relief.ttf') format('truetype');
+    color: white;
+}
+.card-login input{
+    border:none;
+    border-radius: 5px;
+
+}
+#texto-h1 h2{
+    color: white;
+    font-family: verdana;
+    text-decoration: none;
+}
+button.index{
+    border: 0;
+    background-color: #F5DEB3;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+div#caixa-topo{
+    width: 100%;
+    height: 100px;
+    background-color: #F5DEB3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, Sans-serif;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+    background-color: #8B4513;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    /*height: 200px;*/
+    padding: 10px 0;
+}
+#rodape{
+    width: 50%;
+    text-align: left;
+    padding-top: 3%;
+}
+.logo-rodape{
+    width: 50%;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-right: 5%;
+}
+#caixa-rodape{
+    width: 100%;
+    height: 100px;
+    background-color: #F5DEB3;
+    margin-bottom: 0px;
+    padding-bottom: 2%;
+}
+.logo{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+.menu{
+    width: 50%;
+    text-align: right;
+    padding-top: 3%;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: .5s;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+img#img1 {
+            width:600px;
+            height:450px;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: transform .5s ease;
+}
+img#img1:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+.extras{
+    position: absolute;
+    bottom: -400px;
+    right: -260px;
+    width: 850px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #F5DEB3;
+}
+.texto-sobre{
+    margin-top: -6%;
+    margin-left: 10%;
+}
+.texto-sobre h1{
+    font-size: 50px;
+    color: white;
+}
+.texto-sobre p{
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    max-width: 500px;
+}
+.texto-sobre button{
+    border: 0;
+    background-color: #F5DEB3;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;    
+    transition: .5s;
+    text-decoration: none;
+}
+.texto-sobre button:hover{
+    background-color:#BDA06A;
+}.texto-sobre a{
+    text-decoration: none;
+}

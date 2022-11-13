@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block content %}
+    <div class="cardapio" style="width: 40%;">
+            <fieldset class="perfil">
+                <figure>
+                <img src="{{ prato2.img.url }}" width="240" height="180" align="left" class="cardapio">
+                </figure>
+                <div class="h1-p">
+                <h1 class="cabecalho">{{ prato2 }}</h1><b><p>R$ {{prato2.preco}}</p></b>
+                <b>Ingredientes:<br>
+                {% for ingrediente in prato2.ingredientes.all %}
+                    {{ingrediente}}
+                    <br>
+                {% endfor %}
+                </b>
+                </div>
+            </fieldset>
+        </a>
+    </div>
+{% endblock %}

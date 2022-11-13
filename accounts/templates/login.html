@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% block content %}
+<div class="login" style="overflow: hidden;white-space:nowrap;display:inline-block;">
+<fieldset class="field">
+    <form name="formPainel" id="formPainel" method="post" action="{% url 'accounts:/dologing/' %}" enctype="multipart/form-data">
+    <div class="main-login">
+        
+        {% csrf_token %}
+        <div class="left-login" style="margin-top: 2%;">
+            &nbsp;&nbsp;<h2 style="color:white;">Bem-Vindo lanchonete da tia<br></h2>
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h3>Login</h3>
+                <div class="textfield">
+                <label for="usuario"><span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-regular fa-user"></i></span></label>
+                <input type="text" name="user" id="user" placeholder="Usuário">
+                </div>
+                <br>
+                <div class="textfield">
+                <label for="senha"><span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-lock"></i></label>
+                <input type="password" name="password" id="password" placeholder="Senha">
+                </div>
+                <button class="btn-login">Entrar</button>
+
+                <p class="btn-login2">Não tem uma conta? <a href="/create/" class="link-info"style='color:white;'><b>Cadastrar-se</b></a></p>
+
+                {% if msg %}
+            <div class="alert {{class}}">
+                {{msg}}
+            </div>
+        {% endif %}
+            </div>
+        </div>
+    </div>
+    </form>
+</fieldset>
+</div>
+{% endblock %}

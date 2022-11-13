@@ -1,0 +1,26 @@
+{% extends 'main.html'%}
+{% block content %}
+<header>
+    <div class="center">
+    </div><!-- center -->
+</header>
+<section class="sobre">
+    <div class="center">
+        <div class="texto-sobre">
+            <fieldset class="perfil">
+                <center><h1><i class="fa-solid fa-user"></i></h1></center>
+                <center><h2>{{request.user.first_name}}</h2></center>
+            </fieldset>
+            <br>
+            <h3>Histórico de compras</h3>
+            <hr>
+            <h3>Carrinho</h3>
+            <hr>
+            <a href="{% url 'accounts:/changepass/' %}"><h3>Trocar senha</h3></a>
+            <hr>
+        
+<!--            <button><a href="cardapio.php">Especial do Dia!</a></button>-->
+        </div><!-- texto-sobre -->
+    </div><!--center-->
+</section>
+{% endblock %}

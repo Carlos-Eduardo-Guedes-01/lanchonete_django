@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lanchonete Da Tia</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <script src="https://kit.fontawesome.com/c65d405071.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" type="icon" href="{% static 'icons/logo.png' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div id="caixa-topo" class="center">
+            <div class="logo"><img src="{% static 'img/logo.png' %}" width="120px"/></div>
+            <!-- logo -->
+            {% if request.user.is_authenticated %}
+                <div class="menu">
+                    <a href="{% url 'accounts:page_home' %}" class="user">Home</a>
+                    <a href="{% url 'lanchonete:cardapio' %}" class="user">Cardápio</a>
+                    <a href="{% url 'accounts:page_info' %}" class="user"><i class="fa-solid fa-user"></i>{{request.user}}</a>
+                    <a href="{% url 'accounts:/logouts/' %}" class="user"><i class="fa-solid fa-right-from-bracket"></i></a>
+                </div>
+            {% endif %}
+                    
+                
+                <!--menu-->
+        </div>
+        <header>
+            <div class="center">
+            </div><!-- center -->
+        </header>
+        {% block content %}
+
+        {% endblock %}
+<footer>
+        <div class="extras">
+            <img id="img1" src="{% static 'img/img2.png' %}"/>
+        </div>
+        
+        <div id="caixa-rodape" class="center">
+            <!-- logo -->
+                <div id="rodape">
+                    &copy;Carlos Eduardo Guedes
+                </div>
+                <div class="logo"><img src="{% static 'img/logo.png' %}" width="120px"/></div>  
+                <!--menu-->
+        </div>
+</footer>
+</body>
+</html>

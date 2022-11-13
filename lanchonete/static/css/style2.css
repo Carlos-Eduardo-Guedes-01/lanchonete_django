@@ -1,0 +1,107 @@
+@charset 'utf-8';
+footer{
+    margin-top: 15%;
+}
+#rodape p{
+    margin-top: 23%;
+    font-family: verdana;
+    font-size: 13pt;
+    text-align: center;
+}
+#rodape img#img-rodape{
+margin-top: 10px;
+}
+#tabela-bebidas{
+    float: right;
+    margin-top: -21%;
+    margin-right: 30%;
+}
+#tabela2 h2{
+    float: right;
+    margin-top: -21%;
+    margin-right: 30%;
+}
+#tabela-comidas{
+    border-radius: 10px;
+    border:1px;
+    float:left;
+    margin-top: -2%;
+    margin-left: 40%;
+}
+.h1-p h1,p{
+	text-indent:0.5%;
+}
+ul{
+    list-style: none;
+}
+
+#pag-cadastro{
+    padding-top: -35%;
+}
+#form-cad input{
+    padding-left: 4px;
+	border-radius:30px;
+    border-color: white;
+    height: 20px;
+    margin-bottom: 0.5%;
+}
+h1.cadastro{
+    padding-left: 3%;
+    color: white;
+    /*margin-top:-10%;*/
+}
+fieldset{
+	padding: 1% 1% 1% 1%;
+	border-radius: 30px;
+    border-color: #F5DEB3;
+    background-color: #F5DEB3;
+    height: calc(100% - 200px);
+    margin-left: 3%;
+    padding-right: -3%;
+    margin-bottom: 1%;
+    margin-right: 3%;
+}
+img.cardapio{
+border-radius: 30px;
+padding-right: 10px;
+}
+h1.cabecalho{
+    margin-left: 1%;
+	color: red;
+	font-size: 20pt;
+}
+p.preco{
+    text-align: left;
+	margin-right: 88%;
+	color: red;
+	font-size: 18pt;
+}
+button.cardapio{
+    border: 0;
+    background-color: #F5DEB3;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: .5s;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+button.cardapio:hover{
+    background-color:#BDA06A;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: #F5DEB3;
+    transition: .5s;
+}
+
+h1.cardapio{
+    margin-left: 1%;
+}

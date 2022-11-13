@@ -1,0 +1,144 @@
+@charset 'utf-8';
+.cardapio .item{
+    background-color: #F5DEB3;
+}
+h1{
+    color: white;
+}
+@font-face{
+    font-family: 'organic';
+    src: url('../fontes/Organic Relief.ttf') format('truetype');
+}
+#texto-h1 h2{
+    color: white;
+    font-family: verdana;
+    text-decoration: none;
+}
+button.index{
+    border: 0;
+    background-color: #F5DEB3;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+div#caixa-topo{
+    width: 100%;
+    height: 100px;
+    background-color: #F5DEB3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, Sans-serif;
+}
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #8B4513;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    /*height: 200px;*/
+    padding: 10px 0;
+}
+#rodape{
+    width: 50%;
+    text-align: left;
+    padding-top: 3%;
+}
+.logo-rodape{
+    width: 50%;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+#caixa-rodape{
+    width: 100%;
+    height: 100px;
+    background-color: #F5DEB3;
+    margin-bottom: 0px;
+    padding-bottom: 2%;
+}
+.logo{
+    width: 30%;
+    margin-left: 10%;
+    margin-top: -10px;
+}
+.menu{
+    width: 50%;
+    text-align: right;
+    padding-top: 3%;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: .5s;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+img#img1 {
+            width:600px;
+            height:450px;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: transform .5s ease;
+}
+img#img1:hover{
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+.extras{
+    position: absolute;
+    bottom: -300px;
+    right: -250px;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #F5DEB3;
+}
+.texto-sobre{
+    margin-top: -6%;
+    margin-left: 10%;
+}
+.texto-sobre h1{
+    font-size: 50px;
+    color: white;
+}
+.texto-sobre p{
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    max-width: 500px;
+}
+.texto-sobre button{
+    border: 0;
+    background-color: #F5DEB3;
+    color: #8B4513;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;    
+    transition: .5s;
+    text-decoration: none;
+}
+.texto-sobre a{
+    text-decoration: none;
+}

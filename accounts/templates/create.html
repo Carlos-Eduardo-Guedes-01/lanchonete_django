@@ -1,0 +1,45 @@
+{% extends 'main.html' %}
+{% block content %}
+<form name="form-users" id="formUsers" method="post" action="/store/">
+    <div class="main-login">
+       
+       {% csrf_token %}
+       <div class="left-login">
+          <h1>Cadastro Lanches da Tia<br></h1>
+       </div>
+
+       <div class="right-login">
+          <div class="card-login">
+             <div class="textfield">
+                <!--<label for="name">Nome</label>-->
+                <input type="text" name="name" id="name" placeholder="Nome">
+                
+                <!--<label for="usuario">Usuário</label>-->
+                <input type="text" name="user" id="user" placeholder="Usuário">
+             </div>
+
+             <div class="textfield">
+                <!--<label for="senha">Senha</label>-->
+                <input type="password" name="password" id="password" placeholder="Senha">
+
+                <!--<label for="senha">Repita a Senha</label>-->
+                <input type="password" name="password-conf" id="password-conf" placeholder="Repita a Senha">
+             </div>
+
+             <div class="textfield">
+                <!--<label for="email">Email</label>-->
+                <input type="email"name="email" id="email" placeholder="Email">
+             </div>
+                <button class="btn-login">Cadastrar</button>
+             <p class="cadastrar">Já tem uma conta? <a href="{% url 'accounts:page_login' %}" class="link-info">Fazer Login</a></p>
+             
+             {% if msg %}
+          <div class="alert {{class}}">
+             {{msg}}
+          </div>
+       {% endif %}
+          </div>
+       </div>
+    </div>
+ </form>
+{% endblock %}
