@@ -2,16 +2,15 @@
 {% block content %}
     <div class="cardapio" style="width: 40%;margin-left: 1%;">
         {% for prato in pratos %}
-            <fieldset class="perfil" style=" height: 20%;">
+            <fieldset class="perfil">
                 <figure>
                 <img src="{{ prato.img.url }}" width="120" height="120" align="left" class="cardapio">
                 </figure>
                 <div class="h1-p">
                 <h1 class="cabecalho">{{ prato }}</h1><b><p style="color: black;">R$ {{prato.preco}}</p></b>
                     <b>Ingredientes:
-                        {% for ingrediente in prato2.ingredientes.all %}
+                        {% for ingrediente in prato.ingredientes.all %}
                             {{ingrediente}},
-                            
                         {% endfor %}
                 </div>
             </fieldset>            

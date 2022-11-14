@@ -1,4 +1,7 @@
 @charset 'utf-8';
+.cardapio{
+    margin-bottom: 6%;
+}
 hr{
     color: #F5DEB3;
 }

@@ -1,6 +1,13 @@
 @charset 'utf-8';
+#caixa-rodape{
+    height: 1%;
+    padding-top: 0%;
+}
 .cardapio .item{
     background-color: #F5DEB3;
+}
+.cardapio{
+    margin-bottom: 100px
 }
 h1{
     color: white;
@@ -39,7 +46,7 @@ div#caixa-topo{
     font-family: Verdana, Geneva, Tahoma, Sans-serif;
 }
 html,body{
-    height: 100%;
+    
     overflow-x: hidden;
     background-color: #8B4513;
 }
@@ -66,7 +73,7 @@ header{
 }
 #caixa-rodape{
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: #F5DEB3;
     margin-bottom: 0px;
     padding-bottom: 2%;

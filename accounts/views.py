@@ -110,3 +110,5 @@ def changePassword(request):
             'class':"alert-danger"
         }
     return reverse('accounts:/changepass/')'''
+def page_carrinho(request):
+    return render(request, '../../accounts/templates/carrinho.html')

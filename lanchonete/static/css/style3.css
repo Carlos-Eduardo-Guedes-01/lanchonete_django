@@ -32,9 +32,9 @@ div#caixa-topo{
     font-family: Verdana, Geneva, Tahoma, Sans-serif;
 }
 html,body{
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    
+    
+    
     background-color: #8B4513;
 }
 .center{
